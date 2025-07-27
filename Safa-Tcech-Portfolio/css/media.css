@@ -99,6 +99,7 @@
 
 @media (max-width: 880px) {
   .container{
+    padding-top: 110px;
     padding-left: 25px;
     padding-right: 25px;
   }

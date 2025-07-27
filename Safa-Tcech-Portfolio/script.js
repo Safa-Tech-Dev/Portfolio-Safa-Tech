@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // Typed animating
     var type = new Typed(".typing", {
-        strings: ["Java Full Stack Developer", "UI Designer"],
+        strings: ["Senior Software Engineer", "Java Spring Boot, Microservices Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true 
     });
 
     var type = new Typed(".typing__two", {
-        strings: ["Java Full Stack Developer", "UI Designer"],
+        strings: ["Senior Software Engineer", "Java Spring Boot, Microservices Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true 

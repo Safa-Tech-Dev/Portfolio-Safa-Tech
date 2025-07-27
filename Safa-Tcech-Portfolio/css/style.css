@@ -200,12 +200,14 @@ nav.sticky .search__button{
   margin-right: 5px;
 }
 .logo{
+  font-family: 'Montserrat Alternates', sans-serif;
   font-weight: 900;
   font-style: italic;
   font-size: 36px;
   color: #010A43;
 }
 .logo span{
+  font-family: 'Montserrat Alternates', sans-serif;
   color: #f3a600;
 }
 .logo:hover{
@@ -298,11 +300,13 @@ nav ul li{
   justify-content: center;
 }
 .nav__text{
+  font-family: 'Montserrat Alternates', sans-serif;
   font-size: 32px;
   font-weight: 700;
   color: #f3a600;
 }
 .nav__name{
+  font-family: 'Montserrat Alternates', sans-serif;
   font-size: 76px;
   font-weight: 900;
   font-style: italic;
@@ -310,6 +314,7 @@ nav ul li{
   padding: 20px 0;
 }
 .nav__info{
+  font-family: 'Montserrat Alternates', sans-serif;
   margin-left: 5px;
   color: #010A43;
   font-size: 32px;
@@ -345,8 +350,22 @@ nav ul li{
 /***********************************************************************************************************/
 /*                                           Main Begin                                                    */
 /***********************************************************************************************************/
+/********************************************************************************************************/
+/*                                           Hero Section Begin                                          */
 
-
+.hero {
+  background-image: url('../img/Banner.jpg'); /* Replace with your background image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+}
+/*                                           Hero Section end                                          */
 .info{
   padding: 100px 0;
   background: #C9D6FF; 
@@ -362,6 +381,7 @@ nav ul li{
 .info__img{
   width: 600px;
   height: 500px;
+  border-radius: 50%;
   object-fit: cover;
 }
 .info__blog{
@@ -402,6 +422,16 @@ nav ul li{
   line-height: 26px;
 }
 
+.info__text3{
+  text-align: justify;
+  color: #555;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 25px 0 30px;
+  line-height: 26px;
+}
+
+
 .info__link1{
   display: inline-block;
   padding: 15px 30px;
@@ -432,7 +462,7 @@ nav ul li{
   border: 1px solid #C9D6FF;
 }
 
-/* Service styling */
+/* Experience styling */
 
 .service{
   display: flex;
@@ -465,11 +495,19 @@ nav ul li{
   color: #fff;
   transition: all 0.3s ease;
 }
-.box i {
+/* .box i {
   font-size: 50px;
   color: #010A43;
   transition: color 0.5s ease;
-}
+} */
+ .box img{
+   width: 100px;           /* Small size */
+  height: 100px;
+  border-radius: 50%;     /* Makes it round */
+  object-fit: cover;      /* Ensures image fills the shape without distortion */
+  display: block;         /* Removes extra space below image */
+  margin: 0 auto; /* Horizontally centers the image */
+ }
 .box__title{
   font-size: 24px;
   font-weight: bold;
@@ -625,21 +663,23 @@ nav ul li{
   background-color: #010A43;
 }
 .bars .java::before {
-  width: 80%;
-}
-.bars .Springboot::before {
   width: 90%;
 }
+.bars .Springboot::before {
+  width: 95%;
+}
 .bars .springrest::before {
-  width: 80%;
+  width: 90%;
 }
 .bars .Microservices::before {
-  width: 70%;
+  width: 80%;
 }
 .bars .aws::before {
   width: 20%;
 }
-
+.bars .k8s::before {
+  width: 70%;
+}
 
 /* Projects Styling ! */
 
